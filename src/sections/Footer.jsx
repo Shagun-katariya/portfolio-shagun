@@ -16,7 +16,11 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 aria-label={`Visit ${socialImg.name}`}
               >
-                <img src={socialImg.imgPath} alt={`${socialImg.name} icon`} />
+                <img 
+                  src={socialImg.imgPath} 
+                  alt={`${socialImg.name} icon`} 
+                  className="w-8 h-8 md:w-10 md:h-10 object-contain" 
+                />
               </a>
             </div>
           ))}
