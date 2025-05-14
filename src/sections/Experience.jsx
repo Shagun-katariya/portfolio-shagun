@@ -89,6 +89,49 @@ const Experience = () => {
     }, "<"); // position parameter - insert at the start of the animation
   }, []);
 
+  // Function to parse responsibility text and render links
+  const renderResponsibilityWithLinks = (text) => {
+    if (!text.includes("<link")) {
+      return text;
+    }
+
+    const linkRegex = /<link url='([^']+)'>([^<]+)<\/link>/g;
+    const parts = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = linkRegex.exec(text)) !== null) {
+      // Add text before the link
+      if (match.index > lastIndex) {
+        parts.push(text.substring(lastIndex, match.index));
+      }
+
+      // Add the link
+      const url = match[1];
+      const linkText = match[2];
+      parts.push(
+        <a
+          key={url}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-blue-300 underline decoration-dotted transition-colors duration-300 font-medium"
+        >
+          {linkText}
+        </a>
+      );
+
+      lastIndex = match.index + match[0].length;
+    }
+
+    // Add any remaining text
+    if (lastIndex < text.length) {
+      parts.push(text.substring(lastIndex));
+    }
+
+    return parts;
+  };
+
   return (
     <section
       id="experience"
@@ -132,7 +175,7 @@ const Experience = () => {
                           {card.responsibilities.map(
                             (responsibility, index) => (
                               <li key={index} className="text-lg">
-                                {responsibility}
+                                {renderResponsibilityWithLinks(responsibility)}
                               </li>
                             )
                           )}
