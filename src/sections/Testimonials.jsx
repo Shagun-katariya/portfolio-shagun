@@ -18,10 +18,26 @@ const Testimonials = () => {
                 <div>
                   <img src={testimonial.imgPath} alt="" />
                 </div>
-                <div>
+                <div className="flex-1">
                   <p className="font-bold">{testimonial.name}</p>
                   <p className="text-white-50">{testimonial.mentions}</p>
                 </div>
+                {testimonial.linkedin && (
+                  <div className="ml-auto">
+                    <a 
+                      href={testimonial.linkedin} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:opacity-80 transition-opacity"
+                    >
+                      <img 
+                        src="/images/linkedin.png" 
+                        alt="LinkedIn" 
+                        className="w-5 h-5" 
+                      />
+                    </a>
+                  </div>
+                )}
               </div>
             </GlowCard>
           ))}

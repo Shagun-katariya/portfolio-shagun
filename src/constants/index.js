@@ -190,65 +190,70 @@ const expLogos = [
 
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Neel Shah",
+    mentions: "@neelshah",
     review:
-      "I can't say enough good things about Shagun. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "I can't say enough good things about Shagun. He was able to take our complex project requirements at InveeSync and turn them into a seamless, functional solution. His problem-solving abilities are outstanding.",
     imgPath: "/images/client1.png",
+    linkedin: "https://www.linkedin.com/in/neel-shah-kgp/",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Domendra Verma",
+    mentions: "@domendraver",
     review:
-      "Working with Shagun was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Working with Shagun at InveeSync was a fantastic experience. He transformed our outdated systems into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any development projects.",
     imgPath: "/images/client3.png",
+    linkedin: "https://www.linkedin.com/in/domendraverma/",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    name: "Surabhi",
+    mentions: "@surabhi",
     review:
-      "Collaborating with Shagun was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Shagun's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Shagun is the ideal partner.",
+      "Collaborating with Shagun at InveeSync was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Shagun's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your systems and streamline your processes, Shagun is the ideal partner.",
     imgPath: "/images/client2.png",
+    linkedin: "https://www.linkedin.com/in/surabhi-saste/",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "Sai Charan",
+    mentions: "@saicharan",
     review:
-      "Shagun was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that's both modern and easy to navigate. Fantastic work overall.",
+      "Shagun was a pleasure to work with at Samsung. He turned complex requirements into intuitive solutions that were both innovative and easy to implement. His contributions to our voice assistant technology were invaluable. Fantastic work overall.",
     imgPath: "/images/client5.png",
+    linkedin: "https://www.linkedin.com/in/sri-sai-charan-valam/",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "Ashay Tamhane",
+    mentions: "@ashaytamhay",
     review:
-      "Shagun's expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He's a true professional!",
+      "Shagun's expertise in development at Datadive is truly impressive. He delivered a robust and scalable solution for our AI chatbot, and our customer engagement has significantly increased since the launch. He's a true professional!",
     imgPath: "/images/client4.png",
+    linkedin: "https://www.linkedin.com/in/ashaytamhane/",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    name: "Arvind Agrawal",
+    mentions: "@arvindagrawal",
     review:
-      "Shagun was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "Shagun was a pleasure to work with at Datadive. He understood our requirements perfectly and delivered solutions that exceeded our expectations. His skills in both frontend and backend development are top-notch.",
     imgPath: "/images/client6.png",
+    linkedin: "https://www.linkedin.com/in/arvindagarwal1310/",
   },
 ];
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
+    name: "github",
+    imgPath: "/images/github.png",
+    url: "https://github.com/Shagun-katariya/",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/shagun-katariya/",
+  },
+  {
+    name: "codeforces",
+    imgPath: "/images/codeforces.jpeg",
+    url: "https://codeforces.com/profile/The_Black_guy",
   },
 ];
 
